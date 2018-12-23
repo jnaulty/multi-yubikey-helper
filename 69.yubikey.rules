@@ -1,7 +1,9 @@
 ACTION!="add|change", GOTO="yubico_end"
+# Grabbed From https://github.com/Yubico/yubikey-personalization/blob/3011afdff0131d748b772090773ad7001d18085e/69-yubikey.rules
 
 # Udev rules for letting the console user access the Yubikey USB
 # device node, needed for challenge/response to work correctly.
+
 
 # Yubico Yubikey II
 ATTRS{idVendor}=="1050", ATTRS{idProduct}=="0010|0110|0111|0114|0116|0401|0403|0405|0407|0410", \
