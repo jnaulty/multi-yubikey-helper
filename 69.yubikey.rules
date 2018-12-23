@@ -5,6 +5,6 @@ ACTION!="add|change", GOTO="yubico_end"
 
 # Yubico Yubikey II
 ATTRS{idVendor}=="1050", ATTRS{idProduct}=="0010|0110|0111|0114|0116|0401|0403|0405|0407|0410", \
-    RUN+="/bin/sh /usr/local/bin/insert-yubi.sh"
+    RUN+="/usr/local/bin/insert-yubi.sh"
 
 LABEL="yubico_end"
