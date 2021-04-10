@@ -9,7 +9,7 @@ The program is triggered currently by a set of udev rules that are specific for 
 
 1. Run `make configure`  
 Right now, this just `sed`'s the current user's $USER variable to the `inser-yubi.sh` script.
-2. Run `make install`  
+2. Run `sudo make install`  
 This copies the udev rule to `/etc/udev/rules.d/` _and_ copies the script ,executed upon matching of the udev rules, `insert-yubi.sh` to `/usr/local/bin`
 
 ## Why?
